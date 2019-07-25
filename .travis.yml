@@ -6,4 +6,4 @@ before_install:
   - docker build -t dspham/docker-kubernetes -f Dockerfile.dev .
 
 script:
-  - docker run dspham/docker-kubernetes -- --coverage
+  - docker run dspham/docker-kubernetes npm run test -- --coverage
